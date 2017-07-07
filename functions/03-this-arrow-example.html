@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">Make My sandwich !</button>
+</body>
+
+<script type="text/javascript">
+
+    const sandwich = {
+        bread: 'white',
+        cheese: 'cheddar',
+
+        prepare: function(){
+            return `I Want a sandwich with ${this.bread} bread and ${this.cheese}`;
+        },
+
+        make: function(){
+            var that = this;
+            window.setTimeout(function(){
+                console.log(that.prepare());
+            }, 500);
+        },
+
+        makeArrow: function(){
+            window.setTimeout(() =>{
+                    console.log(this.prepare());
+            });
+        }
+    };
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener("click", function(){
+        sandwich.make();
+        sandwich.makeArrow();
+    });
+
+</script>
+
+</html>
