@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>TodoLIST</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="app-container">
+		<h2>What have you to do ?</h2>
+
+		<fieldset>
+			<form id="form-todo" action="#">
+				<input type="text" name="" class="item-text" placeholder="To do"/>
+				<!-- <input type="submit" value="Insert"> -->
+			</form>
+		</fieldset>
+
+		<div class="alert hide">
+			<p>Please, Fill the Input empty</p>
+		</div>
+
+		<div class="box-todo-list">
+			<p>Nothing to do</p>
+			
+			<ol>
+				<li>Dish Wash <a href="#" class="delete">delete</a></li>
+				<li>Going to Supermarket <a href="#" class="delete">delete</a></li>
+				<li>Take a Nap <a href="#" class="delete">delete</a></li>
+				<li>Going to de Swin <a href="#" class="delete">delete</a></li>
+			</ol>
+		</div>
+
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

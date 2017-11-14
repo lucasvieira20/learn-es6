@@ -1,0 +1,94 @@
+body{
+	font-family: "Ubuntu",sans-serif;
+	font-size: 16px;
+	padding:0;
+	margin:0;
+	background: #673AB7;
+}
+
+#app-container{
+	color:#fff;
+	padding:10px;
+	max-width: 640px;
+	margin: 0 auto;
+	margin-top:40px !important;
+}
+
+#app-container #form-todo{
+	margin-top:6px;
+}
+
+#app-container #form-todo > label{
+	font-size: 12px;
+}
+
+#app-container > fieldset{
+	/* border:1px solid #ccc; */
+	padding: 0;
+	border:none;
+}
+
+#app-container input.item-text{
+	width: 100%;
+	display: block;
+	background: #592ca9;
+	color:#fff;
+	padding:10px;
+	border:0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#app-container > input[type="submit"]{
+	display: none;
+}
+
+#app-container input[type="submit"]{
+    background: #531ab7;
+    border: none;
+    padding: 3px;
+    color: #fff;
+    font-family: "Ubuntu",sans-serif;
+}
+
+#app-container ol{
+	padding-left: 0;
+    margin-left: 20px;
+}
+
+#app-container .alert{
+	margin-top: 10px;
+	background: #330e75;
+	padding:14px 10px;
+}
+
+#app-container .delete{
+	color:#fff;
+	float: right;
+	display: none;
+	margin-top:4px;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+
+#app-container li{
+	cursor: pointer;
+	padding:10px;
+}
+
+#app-container li:hover{
+	background: #330e75;
+}
+#app-container li:hover .delete{
+	display: block;
+}
+
+#app-container .alert p{
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+#app-container .alert.hide{
+	display: none;
+}
