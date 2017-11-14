@@ -32,6 +32,7 @@ body{
 	width: 100%;
 	display: block;
 	background: #592ca9;
+	box-sizing: border-box;
 	color:#fff;
 	padding:10px;
 	border:0;
@@ -42,17 +43,18 @@ body{
 	display: none;
 }
 
-#app-container input[type="submit"]{
+/* #app-container input[type="submit"]{
     background: #531ab7;
     border: none;
     padding: 3px;
     color: #fff;
     font-family: "Ubuntu",sans-serif;
-}
+} */
 
 #app-container ol{
 	padding-left: 0;
-    margin-left: 20px;
+	margin-left: 20px;
+	clear: both;
 }
 
 #app-container .alert{
@@ -91,4 +93,22 @@ body{
 
 #app-container .alert.hide{
 	display: none;
+}
+
+.remove-all{
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    position: relative;
+    top: -30px;
+	font-size: 11px;
+	padding:6px;
+	display:block;
+	background: #330e75;
+	box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.remove-all:hover{
+	text-decoration: underline;	
 }

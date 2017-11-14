@@ -74,3 +74,13 @@ deleteBtn.forEach(function(value){
 		this.parentElement.remove();
 	});
 });
+
+//RemoveAll
+
+let removeAll = document.querySelector(".remove-all");
+
+removeAll.addEventListener('click', function(e){
+	 let todoListNode = list.childNodes;
+	 console.log('todo', todoListNode);
+
+});
