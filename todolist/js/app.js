@@ -81,6 +81,10 @@ let removeAll = document.querySelector(".remove-all");
 
 removeAll.addEventListener('click', function(e){
 	 let todoListNode = list.childNodes;
-	 console.log('todo', todoListNode);
+	 
+	 console.log(list);
 
+	 while(list.firstChild) {
+		list.removeChild(list.firstChild);
+	 }
 });
